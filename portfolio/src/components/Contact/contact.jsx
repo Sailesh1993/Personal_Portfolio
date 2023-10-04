@@ -7,7 +7,7 @@ import Client4 from '../../assets/client4.jpeg'
 import Github from '../../assets/github.png'
 import Linkidin from '../../assets/linkidin.png'
 
-const contact = () => {
+const Contact = () => {
   return (
     <section id='contactPage'>
         <div id='clients'>
@@ -38,7 +38,7 @@ const contact = () => {
             </div>
         </div>
     </section>
-  )
+  ) 
 }
 
-export default contact
+export default Contact

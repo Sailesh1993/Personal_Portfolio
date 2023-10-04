@@ -4,7 +4,7 @@ import {Link} from 'react-scroll'
 import bg from '../../assets/bg.png'
 import hire from '../../assets/hire.png'
 
-const intro = () => {
+const Intro = () => {
   return (
     <section id='intro' >
         <div className='introContent'>
@@ -21,4 +21,4 @@ const intro = () => {
   )
 }
 
-export default intro
+export default Intro

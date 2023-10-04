@@ -6,7 +6,7 @@ import Portfolio3 from '../../assets/portfolio3.png'
 import Portfolio4 from '../../assets/portfolio4.png'
 import Portfolio5 from '../../assets/portfolio5.png'
 
-const works = () => {
+const Works = () => {
   return (
     <section id='works'>
         <h2 className='worksTitle'>My Portfolio</h2>
@@ -25,4 +25,4 @@ const works = () => {
   )
 }
 
-export default works
+export default Works
