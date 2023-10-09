@@ -5,6 +5,7 @@ import Portfolio2 from '../../assets/portfolio2.png'
 import Portfolio3 from '../../assets/portfolio3.png'
 import Portfolio4 from '../../assets/portfolio4.png'
 import Portfolio5 from '../../assets/portfolio5.png'
+import Portfolio6 from '../../assets/portfolio6.png'
 
 const Works = () => {
   return (
@@ -20,6 +21,7 @@ const Works = () => {
             <a href='https://sailesh-ecommerce-project-integrify.netlify.app/' target="_blank" rel="noopener noreferrer"><img src={Portfolio3} alt="" className='worksImg' /></a>
             <a href='https://saileshecom-app.azurewebsites.net/swagger/index.html' target="_blank" rel="noopener noreferrer"><img src={Portfolio4} alt="" className='worksImg' /></a>
             <a href='https://saileshe-ecom-webshop.netlify.app' target="_blank" rel="noopener noreferrer"><img src={Portfolio5} alt="" className='worksImg' /></a>
+            <a href='https://sailesh1993.github.io/fs15_3-todo-app/' target="_blank" rel="noopener noreferrer"><img src={Portfolio6} alt="" className='worksImg' /></a>
         </div>
     </section>
   )

@@ -14,12 +14,12 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_m5rwlyv', 'template_ckdvwj9', form.current, 'I-q1JutJdZG5-IUwe')
-          .then((result) => {
-              console.log(result.text);
-              e.target.reset();
-              alert('Email Sent!');
-          }, (error) => {
+        emailjs.sendForm('service_m5rwlyv', 'template_ckdvwj9', form.current, '5UMXp32XlDedR-AIl')
+            .then((result) => {
+            console.log(result.text);
+            e.target.reset();
+            alert('Email Sent!');
+            }, (error) => {
               console.log(error.text);
           });
       };
