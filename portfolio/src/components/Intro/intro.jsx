@@ -2,7 +2,7 @@ import React from 'react'
 import './intro.css'
 import bg from '../../assets/bg.png'
 import hire from '../../assets/hire.png'
-import resume from '../../assets/Sailesh Karki - CV.pdf'
+import resume from '../../assets/KarkiSailesh_Resume.pdf'
 
 const Intro = () => {
   return (
