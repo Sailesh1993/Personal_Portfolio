@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Personal_Portfolio/static/css/main.46c34572.css",
+    "main.js": "/Personal_Portfolio/static/js/main.559547f4.js",
+    "static/media/portfolio3.png": "/Personal_Portfolio/static/media/portfolio3.05a52d08c7465cead443.png",
+    "static/media/portfolio2.png": "/Personal_Portfolio/static/media/portfolio2.2989b4fca57e9a61e0c4.png",
+    "static/media/portfolio4.png": "/Personal_Portfolio/static/media/portfolio4.f014ff3496ebf18b609d.png",
+    "static/media/portfolio1.png": "/Personal_Portfolio/static/media/portfolio1.ae31b98b482ea1206448.png",
+    "static/media/portfolio5.png": "/Personal_Portfolio/static/media/portfolio5.5804edc83c0ac7b3524d.png",
+    "static/media/KarkiSailesh_Resume.pdf": "/Personal_Portfolio/static/media/KarkiSailesh_Resume.790e40d9ebb141bea97a.pdf",
+    "static/media/portfolio6.png": "/Personal_Portfolio/static/media/portfolio6.7ac68096eb98fc2dcc19.png",
+    "static/media/bg.png": "/Personal_Portfolio/static/media/bg.7978c99812b33946206f.png",
+    "static/media/contact.png": "/Personal_Portfolio/static/media/contact.2829a02d5075d41f824c.png",
+    "static/media/webdesign.jpg": "/Personal_Portfolio/static/media/webdesign.f912f732b01e61b2e10a.jpg",
+    "static/media/logo.jpeg": "/Personal_Portfolio/static/media/logo.82a22f734e3ebd48decb.jpeg",
+    "static/media/cloud.webp": "/Personal_Portfolio/static/media/cloud.9b439b251386b5b84d83.webp",
+    "static/media/client4.jpeg": "/Personal_Portfolio/static/media/client4.8edcc299c58806ef1dc9.jpeg",
+    "static/media/uidesign.avif": "/Personal_Portfolio/static/media/uidesign.c660b95961f9d9cc6296.avif",
+    "static/media/client1.webp": "/Personal_Portfolio/static/media/client1.5f02067fa860ddc473fc.webp",
+    "index.html": "/Personal_Portfolio/index.html",
+    "main.46c34572.css.map": "/Personal_Portfolio/static/css/main.46c34572.css.map",
+    "main.559547f4.js.map": "/Personal_Portfolio/static/js/main.559547f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46c34572.css",
+    "static/js/main.559547f4.js"
+  ]
+}
