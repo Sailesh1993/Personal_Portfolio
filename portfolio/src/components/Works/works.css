@@ -42,7 +42,12 @@
     margin: 1rem;
     border-radius: 5px;
     overflow: hidden;
-    width: 25rem; /* Adjust the width as needed */
+    width: 25rem; /* Set a fixed width for all cards */
+    height: 30rem; /* Set a fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* To evenly distribute space within the card */
 }
 
 .project img {
