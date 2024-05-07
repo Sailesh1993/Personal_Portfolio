@@ -65,6 +65,9 @@ const Works = () => {
           </a>
         ))}
       </div>
+      <div className="centeredButtonContainer">
+          <a href= "https://github.com/Sailesh1993" className="centeredButton">See More</a>
+        </div>
     </section>
   )
 }
