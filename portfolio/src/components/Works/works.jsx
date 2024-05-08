@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './works.css'
 import Portfolio1 from '../../assets/portfolio1.png'
 import Portfolio2 from '../../assets/portfolio2.png'
@@ -47,6 +47,10 @@ const Works = () => {
     },
 
   ]
+  const [visibleProjects, setVisibleProjects] = useState(2);
+  const loadMoreProjects = () => {
+    setVisibleProjects(visibleProjects + 2);
+  }
   return (
     <section id='works'>
       <h2 className='worksTitle'>My Portfolio</h2>
@@ -55,7 +59,7 @@ const Works = () => {
         and experience to help businesses achieve their goals and create a strong
         online presence.</span>
       <div className='worksImgs'>
-        {projects.map((project, index) => (
+        {projects.slice(0, visibleProjects).map((project, index) => (
           <a key={index} href={project.link} target="_blank" rel="noopener noreferrer" className='project'>
             <div>
               <img src={project.image} alt={project.title} className='worksImg' />
@@ -65,9 +69,11 @@ const Works = () => {
           </a>
         ))}
       </div>
-      <div className="centeredButtonContainer">
-          <a href= "https://github.com/Sailesh1993" className="centeredButton">See More</a>
+      {visibleProjects < projects.length && (
+        <div className='loadMoreContainer'>
+          <button onClick={loadMoreProjects} className='loadMoreButton'>Load More</button>
         </div>
+      )}
     </section>
   )
 }
