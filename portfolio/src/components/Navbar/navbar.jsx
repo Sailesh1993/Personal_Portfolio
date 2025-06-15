@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import logo from '../../assets/logo.jpeg'
+
 import contact from '../../assets/contact.png'
 import {Link} from 'react-scroll'
 import Menu from '../../assets/menu.png'
@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <nav className='navbar'>
-        <img src={logo} alt='logo' className='logo'/>
+        <h2 className='logo'>SAILESH</h2>
         <div className='desktopMenu'>
             <Link  activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
             <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link>
