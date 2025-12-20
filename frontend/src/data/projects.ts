@@ -1,4 +1,10 @@
+import ecomFullStack from '../assets/projects/ecom-full-stack-app.png';
+import immigrationVisaThumb from '../assets/projects/immigration-visa-simulator.png';
+import swaggerUI from '../assets/projects/swagger-ui-ap.png';
+import vaccineGame from '../assets/projects/vaccine-game.jpeg';
+
 import type { Project } from '../models/portfolio';
+
 
 export const projects: Project[] = [
   {
@@ -29,6 +35,7 @@ export const projects: Project[] = [
     ],
     startDate: '2025-09',
     endDate: '2025-10',
+    thumbnail: immigrationVisaThumb,
   },
   {
     id: 'vaccine-quest-game',
@@ -37,7 +44,7 @@ export const projects: Project[] = [
       'Text-based web game that simulates a resource-management challenge where players must gather resources to formulate a life-saving vaccine.',
     description:
       'A Python-based adventure game exposing a REST API built with Flask and backed by a MySQL/MariaDB database. The frontend uses HTML, CSS, and JavaScript to consume the API and provide an interactive, narrative-driven experience. Developed as a 4-member course project with emphasis on OOP, clean API design, and team collaboration.',
-    techStack: ['other'],
+    techStack: ['python', 'Flask','HTML','CSS','JavaScript'],
     role: 'team',
     highlights: [
       'Applied object-oriented design in Python to model game entities, resources, and game logic.',
@@ -54,6 +61,7 @@ export const projects: Project[] = [
     ],
     startDate: '2024-09',
     endDate: '2024-12',
+    thumbnail: vaccineGame,
   },
   {
     id: 'ecommerce-management-app',
@@ -79,9 +87,10 @@ export const projects: Project[] = [
     ],
     startDate: '2023-08',
     endDate: '2023-09',
+    thumbnail: ecomFullStack,
   },
   {
-    id: 'ecommerce-frontend-swagger',
+    id: 'ecommerce-swagger-ui-api',
     title: 'E-commerce Frontend & Swagger Web API',
     summary:
       'Frontend e-commerce app consuming a documented REST API, featuring authentication, product browsing, cart management, and testing.',
@@ -99,11 +108,12 @@ export const projects: Project[] = [
     links: [
       {
         type: 'github',
-        url: 'https://saileshecom-app.azurewebsites.net/swagger/index.html', // replace with actual
+        url: 'https://saileshecom-app.azurewebsites.net/swagger/index.html',
       },
     ],
     startDate: '2023-05',
     endDate: '2023-05',
+    thumbnail: swaggerUI
   },
   {
     id: 'hrv-challenger-iot',

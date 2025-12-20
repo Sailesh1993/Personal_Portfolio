@@ -5,6 +5,11 @@ export type TechTag =
   | 'mongodb'
   | 'typescript'
   | 'java'
+  | 'python'
+  | 'Flask'
+  | 'HTML'
+  | 'CSS'
+  | 'JavaScript'
   | 'javafx'
   | 'docker'
   | 'other';
@@ -25,6 +30,7 @@ export interface Project {
   links: ProjectLink[];
   startDate?: string;
   endDate?: string;
+  thumbnail?: string;
 }
 
 export interface Skill {
@@ -46,3 +52,10 @@ export interface Profile {
   location?: string;
   bio: string;
 }
+
+export interface NavItem {
+  id: string;
+  label: string;
+  href: string;
+}
+

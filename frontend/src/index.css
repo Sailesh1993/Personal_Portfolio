@@ -1,0 +1,31 @@
+/* stylelint-disable at-rule-no-unknown */
+/* eslint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(15, 23, 42); /* optional: closer to Tailwind slate-900 */
+  color: white;
+}
+
+@keyframes bounce-down {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+
+.scroll-arrow {
+  animation: bounce-down 1.2s infinite;
+}
