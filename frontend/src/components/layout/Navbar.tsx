@@ -1,23 +1,29 @@
+// src/components/layout/Navbar.tsx
 import React, { useState } from "react";
-import { navItems } from "../../data/navigation";
+import { NavSection, Profile } from "../../types";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  navItems: NavSection[];
+  profile: Profile;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ navItems, profile }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed w-full z-50 bg-slate-900 backdrop-blur border-b border-slate-800">
+    <header className="fixed w-full top-0 left-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <a
           href="#home"
-          className="text-xl font-semibold tracking-wide text-sky-300"
+          className="text-xl font-bold tracking-wide text-sky-300 uppercase"
         >
-          SAILESH KARKI
+          {profile.name}
         </a>
 
-        {/* desktop */}
+        {/* Desktop Menu */}
         <div className="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
           {navItems.map((item) => (
-            <a key={item.id} href={item.href} className="hover:text-sky-400">
+            <a key={item.id} href={item.href} className="hover:text-sky-400 transition-colors">
               {item.label}
             </a>
           ))}
@@ -25,12 +31,12 @@ const Navbar: React.FC = () => {
 
         <a
           href="#contact"
-          className="hidden rounded-full bg-sky-500 px-4 py-1.5 text-sm font-semibold text-slate-950 hover:bg-sky-400 md:inline-flex"
+          className="hidden rounded-full bg-sky-500 px-5 py-1.5 text-sm font-semibold text-slate-950 hover:bg-sky-400 transition md:inline-flex"
         >
           Contact
         </a>
 
-        {/* mobile hamburger */}
+        {/* Mobile Hamburger */}
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
@@ -45,25 +51,15 @@ const Navbar: React.FC = () => {
             stroke="currentColor"
           >
             {open ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
         </button>
       </nav>
 
-      {/* mobile menu */}
+      {/* Mobile Menu */}
       {open && (
         <div className="border-t border-slate-800 bg-slate-950 md:hidden">
           <div className="mx-auto flex max-w-6xl flex-col px-6 py-3 space-y-2 text-sm font-medium text-slate-200">
@@ -72,7 +68,7 @@ const Navbar: React.FC = () => {
                 key={item.id}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="py-1 hover:text-sky-400"
+                className="py-1 hover:text-sky-400 transition-colors"
               >
                 {item.label}
               </a>
@@ -80,7 +76,7 @@ const Navbar: React.FC = () => {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex w-max rounded-full bg-sky-500 px-4 py-1.5 text-sm font-semibold text-slate-950 hover:bg-sky-400"
+              className="mt-2 inline-flex w-max rounded-full bg-sky-500 px-4 py-1.5 text-sm font-semibold text-slate-950 hover:bg-sky-400 transition"
             >
               Contact
             </a>

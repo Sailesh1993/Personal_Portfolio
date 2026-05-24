@@ -1,31 +1,26 @@
-/**
- * Education related types
- * Types for managing education history and qualifications
- */
+// src/types/education.types.ts
 
-export interface EducationFocus {
-    id?: string;
-    topic: string;
-  }
-  
-  export interface Education {
-    id: string;
-    degree: string;
-    school: string;
-    location: string;
-    country?: string;
-    startDate: string;
-    endDate: string;
-    period: string;
-    focusAreas: EducationFocus[] | string[];
-    gpa?: number;
-    description?: string;
-    achievements?: string[];
-    isCurrent?: boolean;
-  }
-  
-  export interface EducationData {
-    education: Education[];
-    total: number;
-  }
-  
+export interface Education {
+  id: string;
+  degree: string;
+  school: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  period: string;
+  focusAreas: string[];
+  gpa?: string;
+  ectsCompleted?: number;
+  isCurrent?: boolean;    
+  achievements?: string[]; 
+  thesis?: {
+    title: string;
+    description: string;
+    url?: string;
+  };
+}
+
+export interface EducationData {
+  education: Education[];
+  total: number;
+}
